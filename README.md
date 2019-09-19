@@ -1,0 +1,11 @@
+# Armit Patel - Cache simulator report - 177006102
+
+	The objective of this assignment was to implement a cache simulator which can evaluate different formats of caches’. This simulator is
+  to run with a least recently used algorithm and must support the usage given. The main data structure used in my program is Drive. 
+  This structure has three variables, mark, order, and pass. Mark stores the index of the block and is used to find which block the address
+  is in. Order keeps track of when something is written in the cache and also when hit gets incremented. Order is set to the variable count
+  and that way I can find the Least Recently Used block. The block with the least value of order will be removed. The last variable, pass, 
+  keeps track of whether a block is empty or not. A value of 0 in pass means that the block is empty and 1 if it is not. The value of pass 
+  can only be 0 or 1. What I observed about prefetching is that in every case, the number of hits and consequently, reads, 
+  increased when prefetching is used. Memory writing is the same when prefetching is used and when not. Prefetching makes adjacent addresses
+  be put in the cache when a address is being read and thus decreases the order for misses. I also observed that this causes a shorter runtime.
