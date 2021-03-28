@@ -1,4 +1,4 @@
-# Armit Patel - Cache simulator report - 177006102
+# Armit Patel - Cache simulator repor
 
 The objective of this assignment was to implement a cache simulator which can evaluate different formats of caches’. This simulator is to run with a least recently used algorithm and must support the usage given. The main data structure used in my program is Drive. 
 This structure has three variables, mark, order, and pass. Mark stores the index of the block and is used to find which block the address
